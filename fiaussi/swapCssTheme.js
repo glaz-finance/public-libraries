@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
   let baseUrl = "https://www.tfaforms.com/uploads/themes/theme-";
   let newref = baseUrl + getSocietyTheme() + ".css";
   let mySheet = document.querySelector(`link[href^="${baseUrl}"]`);
