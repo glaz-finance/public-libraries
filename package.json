@@ -1,0 +1,28 @@
+{
+  "name": "public-libraries",
+  "version": "1.0.0",
+  "description": "A collection of publicly available libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaz-finance/public-libraries.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glaz-finance/public-libraries/issues"
+  },
+  "homepage": "https://github.com/glaz-finance/public-libraries#readme",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
