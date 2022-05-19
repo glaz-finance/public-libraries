@@ -1,4 +1,3 @@
-swapTheme();
 document.addEventListener("DOMContentLoaded", swapTheme);
 
 function swapTheme() {
