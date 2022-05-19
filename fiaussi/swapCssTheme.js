@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  console.debug("Adding lstener to swap theme")
   let baseUrl = "https://www.tfaforms.com/uploads/themes/theme-";
   let newref = baseUrl + getSocietyTheme() + ".css";
   let mySheet = document.querySelector(`link[href^="${baseUrl}"]`);
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function getSocietyTheme() {
+  console.debug("Swapping theme")
   let societiesThemes = {
     Glaz: "83308",
     Nortia: "83310",
