@@ -1,10 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-  console.debug("Adding lstener to swap theme")
+swapTheme();
+document.addEventListener("DOMContentLoaded", swapTheme);
+
+function swapTheme() {
   let baseUrl = "https://www.tfaforms.com/uploads/themes/theme-";
   let newref = baseUrl + getSocietyTheme() + ".css";
   let mySheet = document.querySelector(`link[href^="${baseUrl}"]`);
   mySheet.href = newref;
-});
+}
 
 function getSocietyTheme() {
   console.debug("Swapping theme")
