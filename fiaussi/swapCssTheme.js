@@ -13,6 +13,7 @@ function getSocietyTheme() {
     Glaz: "83308",
     Nortia: "83310",
     Default: "68007",
+    Perial: "83308"
   };
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
